@@ -71,6 +71,7 @@ Run the frontend:
 Simply open the index.html file in your web browser.
 
 📫 Contact
+
 Vishnu Murthy
 
 LinkedIn-https://www.linkedin.com/in/vishnumediboina/
