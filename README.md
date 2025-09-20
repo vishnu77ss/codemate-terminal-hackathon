@@ -72,5 +72,7 @@ Simply open the index.html file in your web browser.
 
 📫 Contact
 Vishnu Murthy
+
 LinkedIn-https://www.linkedin.com/in/vishnumediboina/
+
 vishnumurthy_mediboina@srmap.edu.in
