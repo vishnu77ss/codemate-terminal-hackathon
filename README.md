@@ -6,6 +6,7 @@ For a visual overview and demo of the UI, see attached screenshots
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/23d2af19-4405-402a-b1b8-70b7258b0da9" />
 ✨ Live Demo
 Frontend Live Site: https://codemate-terminal-hackathon.netlify.app/
+
 Backend Live API: https://codemate-terminal-hackathon.onrender.com
 
 🌟 Key Features
