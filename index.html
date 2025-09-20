@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeMate AI Terminal</title>
+    <!-- Link to our future stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts for a classic terminal look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- This is the main terminal window -->
+    <div id="terminal-container">
+      <!-- All output from commands will be added here by JavaScript -->
+      <div id="output-area">
+        <div class="output-line">Welcome to CodeMate AI Terminal!</div>
+        <div class="output-line">
+          Type 'help' for a list of custom commands.
+        </div>
+      </div>
+
+      <!-- This is where the user types their commands -->
+      <div class="input-line">
+        <span class="prompt">guest@codemate:~$</span>
+        <input type="text" id="command-input" autofocus />
+      </div>
+    </div>
+
+    <!-- Link to our future JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

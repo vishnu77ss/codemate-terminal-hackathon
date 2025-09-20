@@ -1,0 +1,108 @@
+/* General body styling - We now use Flexbox to perfectly center the terminal */
+body {
+  background-color: #1a1a1a;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  margin: 0;
+  /* Flexbox properties to center the terminal vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure the body takes up the full screen height */
+}
+
+/* --- NEW: Keyframes for the glowing border animation --- */
+@keyframes glowing-border {
+  0% {
+    box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+  }
+  50% {
+    box-shadow: 0 0 10px #4dffff, 0 0 20px #4dffff, 0 0 30px #4dffff;
+  }
+  100% {
+    box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+  }
+}
+
+/* The main container for our terminal - now with the animation! */
+#terminal-container {
+  width: 95%; /* Use a percentage of the screen width */
+  max-width: 1200px; /* But don't let it get too wide on large monitors */
+  height: 90vh; /* 90% of the viewport height */
+  border: 2px solid #00ff00; /* A solid green border to start */
+  background-color: #0d0d0d;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in width/height calculation */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  /* --- THIS IS THE NEW ANIMATED GLOW --- */
+  /* We apply the animation here */
+  animation: glowing-border 4s ease-in-out infinite;
+}
+
+/* Area where all command outputs are displayed */
+#output-area {
+  flex-grow: 1;
+  word-wrap: break-word;
+  color: #00ff00; /* Classic terminal green */
+}
+
+/* Styling for each line of output */
+.output-line {
+  margin-bottom: 5px;
+  white-space: pre-wrap;
+}
+
+/* A special style for error messages */
+.error-line {
+  color: #ff4d4d; /* Red for errors */
+}
+
+/* Styling for the user input line at the bottom */
+.input-line {
+  display: flex;
+  align-items: center;
+}
+
+/* The 'guest@codemate:~$' prompt */
+.prompt {
+  color: #4dffff; /* A nice cyan for the prompt */
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+/* The actual input field where the user types */
+#command-input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  color: #00ff00;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  outline: none;
+}
+
+/* --- Impressive and Interactive Scrollbar Styling --- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* The track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #0d0d0d; /* Match the terminal's inner background */
+  border-radius: 5px;
+}
+
+/* The handle (the part you drag) */
+::-webkit-scrollbar-thumb {
+  background: #444; /* A dark gray handle */
+  border-radius: 5px;
+}
+
+/* The handle when you hover over it */
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff00; /* Bright green on hover for an interactive feel! */
+}
