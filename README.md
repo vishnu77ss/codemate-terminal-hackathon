@@ -3,7 +3,8 @@
 📸 Screenshot of project For a visual overview and demo of the UI, see attached screenshots Image 
 <img width="1855" height="893" alt="Image" src="https://github.com/user-attachments/assets/185545d0-094d-4bc4-b202-afcfbf0af42f" />
 
-✨ Live Demo Frontend Live Site: https://codemate-terminal-hackathon.netlify.app/
+✨ Live Demo 
+Frontend Live Site: https://codemate-terminal-hackathon.netlify.app/
 
 Backend Live API: https://codemate-terminal-hackathon.onrender.com
 
