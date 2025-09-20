@@ -3,7 +3,7 @@ Built for the CodeMate.AI Hackathon | September 2025
 A fully functional, web-based command terminal with a Python/Flask backend. This application mimics the behavior of a real system terminal while adding a layer of intelligence with an AI-powered natural language parser and a polished, modern user interface.
 📸 Screenshot of project 
 For a visual overview and demo of the UI, see attached screenshots 
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/23d2af19-4405-402a-b1b8-70b7258b0da9" />
+<img width="1855" height="893" alt="Image" src="https://github.com/user-attachments/assets/185545d0-094d-4bc4-b202-afcfbf0af42f" />
 ✨ Live Demo
 Frontend Live Site: https://codemate-terminal-hackathon.netlify.app/
 
