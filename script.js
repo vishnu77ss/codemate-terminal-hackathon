@@ -74,7 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Function to Execute Command on Backend ---
   async function executeCommandOnBackend(command) {
     // The URL of our Flask backend API
-    const apiUrl = "http://127.0.0.1:5000/api/execute";
+    const apiUrl =
+      "https://codemate-terminal-hackathon.onrender.com/api/execute";
 
     try {
       const response = await fetch(apiUrl, {
@@ -143,4 +144,5 @@ You can also use standard shell commands like ls, pwd, mkdir, etc., and natural 
     div.textContent = text;
     return div.innerHTML;
   }
-});``
+});
+``;
